@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build">
+  <Sdk Name="Microsoft.Build.Sql" Version="0.1.7-preview" />
+  <PropertyGroup>
+    <Name>VictorioI</Name>
+    <ProjectGuid>{CBB736B1-DF0C-438B-BA52-B705BE63A996}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.SqlAzureV12DatabaseSchemaProvider</DSP>
+    <ModelCollation>1033, CI</ModelCollation>
+  </PropertyGroup>
+  <Target Name="BeforeBuild">
+    <Delete Files="$(BaseIntermediateOutputPath)\project.assets.json" />
+  </Target>
+  <ItemGroup>
+    <Folder Include="Sprint1\BOLSCO\TOS\" />
+  </ItemGroup>
+</Project>
